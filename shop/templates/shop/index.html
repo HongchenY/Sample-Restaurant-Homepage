@@ -1,0 +1,7 @@
+{% extends "shop/master.html" %}
+{% load html_formatters %}
+{% block main %}
+{% for product in products %}
+<div><a href="{% url 'products' product.id %}">{{ product.name }}</a>, {{ product.price|currency_dollar }}</div>
+{% endfor %}
+{% endblock %}

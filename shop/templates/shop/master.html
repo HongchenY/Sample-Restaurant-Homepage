@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gennaro's webshop</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'shop/styles/screen.css' %}">
+    </head>
+    <body>
+        <img class="logo" src="{% static 'shop/images/defanglogo.png' %}">
+        {% block main %}{% endblock %}
+    </body>
+</html>
